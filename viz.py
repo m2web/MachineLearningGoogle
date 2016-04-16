@@ -1,3 +1,5 @@
+#used https://stackoverflow.com/questions/29987840/how-to-execute-python-code-from-within-visual-studio-code to configure VS Code to display output in VS Code
+
 import numpy as np
 from sklearn.datasets import load_iris
 from sklearn import tree
