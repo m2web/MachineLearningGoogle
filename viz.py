@@ -39,9 +39,12 @@ clf.fit(train_data, train_target)
 #                          special_characters=True) 
 # graph = pydot.graph_from_dot_data(dot_data.getvalue()) 
 # graph.write_pdf("iris.pdf") 
-##the above produced a PDF without labels. There was a Warning with the output:
+##the above produced a PDF without labels on both Ubintu 14.04 and 15.04. There was a Warning with the output:
 ##Warning: Not built with libexpat. Table formatting is not available.
 ##I did the conda install expat but still no fixing it.
+##
+##I was able to install pydot_ng via conda install -c https://conda.binstar.org/sstromberg pydot
+##and then changed the import of pydot to import pydot_ng as pydot and all worked on Windows 10
 
 print test_data[2], test_target[2]
 print iris.feature_names, iris.target_names
